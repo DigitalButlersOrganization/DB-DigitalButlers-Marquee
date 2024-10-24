@@ -1,0 +1,57 @@
+{
+  "name": "@digital-butlers/tabs",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "A convenient library with tabs for everyday tasks",
+  "keywords": ["tabs"],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "homepage": "https://github.com/DigitalButlersOrganization/DB-DigitalButlers-Tabs#readme",
+  "website": "https://www.digitalbutlers.team/",
+  "bugs": {
+    "url": "https://github.com/DigitalButlersOrganization/DB-DigitalButlers-Tabs/issues",
+    "email": "digitalbutlers.team@gmail.com"
+  },
+  "exports": {
+    ".": "./index.js"
+  },
+  "scripts": {
+    "dev": "vite --open",
+    "build": "tsc && vite build && node build-configuration.js",
+    "preview": "vite preview",
+    "post": "npm run build && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DigitalButlersOrganization/DB-digitalbutlers-components.git"
+  },
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "eslint": "^8.29.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-unicorn": "^42.0.0",
+    "postcss": "^8.4.20",
+    "postcss-scss": "^4.0.6",
+    "sass": "^1.56.2",
+    "stylelint": "^14.16.0",
+    "stylelint-color-format": "^1.1.0",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-recommended": "^7.0.0",
+    "stylelint-scss": "^4.3.0",
+    "stylelint-use-logical-spec": "^4.1.0",
+    "typescript": "^4.9.4",
+    "vite-plugin-eslint": "^1.8.1"
+  },
+  "dependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "prettier": "^3.2.5",
+    "rollup-plugin-smart-asset": "^2.1.2",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "vite": "^3.2.5"
+  }
+}
