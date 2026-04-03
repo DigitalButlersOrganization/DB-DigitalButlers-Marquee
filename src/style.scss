@@ -2,7 +2,7 @@
 	0% {
 		transform: translateX(0);
 	}
-	
+
 	100% {
 		transform: translateX(-50%);
 	}
@@ -10,30 +10,32 @@
 
 
 [data-marquee-role="parent"] {
+	width: 100%;
+
 	[data-marquee-role="moving-line"] {
 		animation-play-state: running;
 		animation-iteration-count: infinite;
 		animation-timing-function: linear;
 	}
-	
+
 	&[data-marquee-state="disabled"] {
 		[data-marquee-role="moving-line"] {
 			animation-name: none;
 		}
 	}
-	
+
 	&[data-marquee-state="enabled"] {
 		overflow: hidden;
 		display: flex;
 		flex-direction: row;
 		justify-content: start;
-		
+
 		[data-marquee-role="moving-line"] {
 			animation-name: marqueeMovingLine;
 			/* may be we need to add '!important'... */
-			width: max-content; 
+			width: max-content;
 		}
-		
+
 		[data-marquee-role="list"] {
 			/* may be we need to add '!important'... */
 			display: flex;
