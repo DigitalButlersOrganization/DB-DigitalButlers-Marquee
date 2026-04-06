@@ -61,7 +61,6 @@ export class Marquee {
 	};
 
 	initResizeObserver = () => {
-		console.log('observer');
 		const resizeObserver = new ResizeObserver(() => {
 			if (this.matchMediaRule.matches) {
 				this.update();
