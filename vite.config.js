@@ -22,7 +22,7 @@ export default defineConfig({
 		sourcemap: false,
 	},
 	plugins: [
-		dts({ include: ['src'], rollupTypes: true }),
+		dts({ include: ['src'] }),
 		{
 			name: 'generate-css-variants',
 			writeBundle() {
