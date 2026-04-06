@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"target": "ESNext",
 		"module": "ESNext",
-		"moduleResolution": "Node",
+		"moduleResolution": "Bundler",
 		// "declaration": true,
 		"useDefineForClassFields": true,
 		"lib": ["ESNext", "DOM"],
@@ -17,11 +17,10 @@
 		"skipLibCheck": true,
 		"importHelpers": true, // Позволяет использовать вспомогательные функции из tslib
 		"allowSyntheticDefaultImports": true, // Разрешает импорт из модулей без дефолтного экспорта
-		"forceConsistentCasingInFileNames": true, 
+		"forceConsistentCasingInFileNames": true,
 		// Требует согласованности регистра в именах файлов
-		"outDir": "./dist", 
+		"outDir": "./dist"
 		// Указывает папку для вывода файлов (используется только для справки, Vite управляет этим сам)
-		"baseUrl": "." // Базовый путь для разрешения немодульных путей
 	},
-	"include": ["./src/index.ts"]
+	"include": ["./src/index.ts", "./src/vite-env.d.ts"]
 }
